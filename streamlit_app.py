@@ -13,7 +13,7 @@ streamlit.header('BUILD YOUR OWN SOOMTHIE')
 my_fruitlist = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruitlist = my_fruitlist.set_index('Fruit')
 # Let's put a pick list here so they can pick the fruit they want to include
-streamlit.multiselect("Pick some fruits:", list(my_fruitlist.index))
+streamlit.multiselect("Pick some fruits:", list(my_fruitlist.index),['Avocado','Strawberries'])
        
 
 #display the table on the page 
